@@ -22,5 +22,5 @@ This was built using Version 10.2.1. Download or clone the repo.
 3. Clean the project.
 4. Build & Run.
 
-[homeScreen1]: https://github.com/dalyodhran/swoosh-app/blob/master/screenShots/homeScreen1.png
-[homeScreen2]: https://github.com/dalyodhran/swoosh-app/blob/master/screenShots/homeScreen2.png
+[homeScreen1]: https://github.com/dalyodhran/profile-app/blob/master/screenShots/homeScreen1.png
+[homeScreen2]: https://github.com/dalyodhran/profile-app/blob/master/screenShots/homeScreen2.png
