@@ -4,7 +4,9 @@ Profile app was built using training material from [Devslopes](https://www.devsl
 Profile app is a simple one screen application to show case the resizing of your app for both iPhone and iPad.
 Profile app will scale automatically to the size of your device using the space available to your app.
 
-![alt text][homeScreen1] ![alt text][homeScreen2]
+![alt text][homeScreen1]
+
+![alt text][homeScreen2]
 
 ### Topics learned
 1. Auto layout for iPhone.
