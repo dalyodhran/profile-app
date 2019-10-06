@@ -4,4 +4,5 @@ plugins {
 
 xcodebuild {
   target = 'dev-profile'
+  allowProvisioningUpdates = true
 }
