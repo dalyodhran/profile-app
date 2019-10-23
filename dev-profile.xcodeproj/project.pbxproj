@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		288D2EDD2361114B00A5FE84 /* dev_profileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D2EDC2361114B00A5FE84 /* dev_profileTests.swift */; };
 		28DBA2C32210AAA7000A57DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DBA2C22210AAA7000A57DB /* AppDelegate.swift */; };
 		28DBA2C52210AAA7000A57DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DBA2C42210AAA7000A57DB /* ViewController.swift */; };
 		28DBA2C82210AAA7000A57DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DBA2C62210AAA7000A57DB /* Main.storyboard */; };
@@ -14,7 +15,20 @@
 		28DBA2CD2210AAA8000A57DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DBA2CB2210AAA8000A57DB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		288D2EDF2361114B00A5FE84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DBA2B72210AAA7000A57DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DBA2BE2210AAA7000A57DB;
+			remoteInfo = "dev-profile";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		288D2EDA2361114B00A5FE84 /* dev-profileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dev-profileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		288D2EDC2361114B00A5FE84 /* dev_profileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dev_profileTests.swift; sourceTree = "<group>"; };
+		288D2EDE2361114B00A5FE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28DBA2BF2210AAA7000A57DB /* dev-profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev-profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DBA2C22210AAA7000A57DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28DBA2C42210AAA7000A57DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		288D2ED72361114B00A5FE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28DBA2BC2210AAA7000A57DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +56,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		288D2EDB2361114B00A5FE84 /* dev-profileTests */ = {
+			isa = PBXGroup;
+			children = (
+				288D2EDC2361114B00A5FE84 /* dev_profileTests.swift */,
+				288D2EDE2361114B00A5FE84 /* Info.plist */,
+			);
+			path = "dev-profileTests";
+			sourceTree = "<group>";
+		};
 		28DBA2B62210AAA7000A57DB = {
 			isa = PBXGroup;
 			children = (
 				28DBA2C12210AAA7000A57DB /* dev-profile */,
+				288D2EDB2361114B00A5FE84 /* dev-profileTests */,
 				28DBA2C02210AAA7000A57DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				28DBA2BF2210AAA7000A57DB /* dev-profile.app */,
+				288D2EDA2361114B00A5FE84 /* dev-profileTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +99,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		288D2ED92361114B00A5FE84 /* dev-profileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288D2EE32361114B00A5FE84 /* Build configuration list for PBXNativeTarget "dev-profileTests" */;
+			buildPhases = (
+				288D2ED62361114B00A5FE84 /* Sources */,
+				288D2ED72361114B00A5FE84 /* Frameworks */,
+				288D2ED82361114B00A5FE84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				288D2EE02361114B00A5FE84 /* PBXTargetDependency */,
+			);
+			name = "dev-profileTests";
+			productName = "dev-profileTests";
+			productReference = 288D2EDA2361114B00A5FE84 /* dev-profileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		28DBA2BE2210AAA7000A57DB /* dev-profile */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28DBA2D12210AAA8000A57DB /* Build configuration list for PBXNativeTarget "dev-profile" */;
@@ -90,10 +140,14 @@
 		28DBA2B72210AAA7000A57DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Odhrán Daly";
 				TargetAttributes = {
+					288D2ED92361114B00A5FE84 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 28DBA2BE2210AAA7000A57DB;
+					};
 					28DBA2BE2210AAA7000A57DB = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -113,11 +167,19 @@
 			projectRoot = "";
 			targets = (
 				28DBA2BE2210AAA7000A57DB /* dev-profile */,
+				288D2ED92361114B00A5FE84 /* dev-profileTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		288D2ED82361114B00A5FE84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28DBA2BD2210AAA7000A57DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +193,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		288D2ED62361114B00A5FE84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288D2EDD2361114B00A5FE84 /* dev_profileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28DBA2BB2210AAA7000A57DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +211,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		288D2EE02361114B00A5FE84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DBA2BE2210AAA7000A57DB /* dev-profile */;
+			targetProxy = 288D2EDF2361114B00A5FE84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		28DBA2C62210AAA7000A57DB /* Main.storyboard */ = {
@@ -162,6 +240,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		288D2EE12361114B00A5FE84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VLD2GRP4W;
+				INFOPLIST_FILE = "dev-profileTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odhrandaly.dev-profileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dev-profile.app/dev-profile";
+			};
+			name = Debug;
+		};
+		288D2EE22361114B00A5FE84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VLD2GRP4W;
+				INFOPLIST_FILE = "dev-profileTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odhrandaly.dev-profileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dev-profile.app/dev-profile";
+			};
+			name = Release;
+		};
 		28DBA2CF2210AAA8000A57DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -321,6 +441,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		288D2EE32361114B00A5FE84 /* Build configuration list for PBXNativeTarget "dev-profileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288D2EE12361114B00A5FE84 /* Debug */,
+				288D2EE22361114B00A5FE84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		28DBA2BA2210AAA7000A57DB /* Build configuration list for PBXProject "dev-profile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
