@@ -1,0 +1,65 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "main": ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.swiftmodule","<Profile-app-debug.module>"]
+  "test": ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile-appPackageTests.xctest/Contents/MacOS/Profile-appPackageTests","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.swiftmodule","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.swiftmodule","<Profile-app-debug.module>","<Profile-appPackageTests-debug.test>","<Profile-appTests-debug.module>"]
+  "Profile-app-debug.module": ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.swiftmodule","<Profile-app-debug.module>"]
+  "Profile-appPackageTests-debug.test": ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile-appPackageTests.xctest/Contents/MacOS/Profile-appPackageTests","<Profile-appPackageTests-debug.test>"]
+  "Profile-appTests-debug.module": ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.swiftmodule","<Profile-appTests-debug.module>"]
+default: "main"
+commands: 
+  "<C.Profile-app-debug.module>":
+    tool: phony
+    inputs: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.swiftmodule"]
+    outputs: ["<Profile-app-debug.module>"]
+
+  "<C.Profile-appPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile-appPackageTests.xctest/Contents/MacOS/Profile-appPackageTests"]
+    outputs: ["<Profile-appPackageTests-debug.test>"]
+
+  "<C.Profile-appTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.swiftmodule"]
+    outputs: ["<Profile-appTests-debug.module>"]
+
+  "C.Profile-app-debug.module":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "Profile_app"
+    module-output-path: "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.swiftmodule"
+    inputs: ["/Users/odhrandaly/Dev/Profile-app/Sources/Profile-app/Profile_app.swift"]
+    outputs: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.build/Profile_app.swift.o","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.swiftmodule"]
+    import-paths: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.build"
+    objects: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.build/Profile_app.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/odhrandaly/Dev/Profile-app/Sources/Profile-app/Profile_app.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "C.Profile-appPackageTests-debug.test":
+    tool: shell
+    description: "Linking ./.build/x86_64-apple-macosx/debug/Profile-appPackageTests.xctest/Contents/MacOS/Profile-appPackageTests"
+    inputs: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.build/Profile_app.swift.o","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/Profile_appTests.swift.o","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/XCTestManifests.swift.o"]
+    outputs: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile-appPackageTests.xctest/Contents/MacOS/Profile-appPackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-L","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug","-o","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile-appPackageTests.xctest/Contents/MacOS/Profile-appPackageTests","-module-name","Profile_appPackageTests","-Xlinker","-bundle","@/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile-appPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.10","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.Profile-appTests-debug.module":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "Profile_appTests"
+    module-output-path: "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.swiftmodule"
+    inputs: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.swiftmodule","/Users/odhrandaly/Dev/Profile-app/Tests/Profile-appTests/Profile_appTests.swift","/Users/odhrandaly/Dev/Profile-app/Tests/Profile-appTests/XCTestManifests.swift"]
+    outputs: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/Profile_appTests.swift.o","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/XCTestManifests.swift.o","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.swiftmodule"]
+    import-paths: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build"
+    objects: ["/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/Profile_appTests.swift.o","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/XCTestManifests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/odhrandaly/Dev/Profile-app/Tests/Profile-appTests/Profile_appTests.swift","/Users/odhrandaly/Dev/Profile-app/Tests/Profile-appTests/XCTestManifests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+

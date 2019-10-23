@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "a96d83e13b31ecdd1b235abc26830464"
+build_time: [1571861020, 952229000]
+inputs:
+  "/Users/odhrandaly/Dev/Profile-app/Tests/Profile-appTests/Profile_appTests.swift": [1571861002, 429772126]
+  "/Users/odhrandaly/Dev/Profile-app/Tests/Profile-appTests/XCTestManifests.swift": [1571861002, 430017757]

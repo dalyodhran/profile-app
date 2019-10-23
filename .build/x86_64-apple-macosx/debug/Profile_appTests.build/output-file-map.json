@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/master.swiftdeps"
+  },
+  "/Users/odhrandaly/Dev/Profile-app/Tests/Profile-appTests/Profile_appTests.swift": {
+    "dependencies": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/Profile_appTests.d",
+    "object": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/Profile_appTests.swift.o",
+    "swiftmodule": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/Profile_appTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/Profile_appTests.swiftdeps"
+  },
+  "/Users/odhrandaly/Dev/Profile-app/Tests/Profile-appTests/XCTestManifests.swift": {
+    "dependencies": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/XCTestManifests.d",
+    "object": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/XCTestManifests.swift.o",
+    "swiftmodule": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/XCTestManifests~partial.swiftmodule",
+    "swift-dependencies": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_appTests.build/XCTestManifests.swiftdeps"
+  }
+}

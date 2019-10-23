@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.build/master.swiftdeps"
+  },
+  "/Users/odhrandaly/Dev/Profile-app/Sources/Profile-app/Profile_app.swift": {
+    "dependencies": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.build/Profile_app.d",
+    "object": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.build/Profile_app.swift.o",
+    "swiftmodule": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.build/Profile_app~partial.swiftmodule",
+    "swift-dependencies": "/Users/odhrandaly/Dev/Profile-app/.build/x86_64-apple-macosx/debug/Profile_app.build/Profile_app.swiftdeps"
+  }
+}
